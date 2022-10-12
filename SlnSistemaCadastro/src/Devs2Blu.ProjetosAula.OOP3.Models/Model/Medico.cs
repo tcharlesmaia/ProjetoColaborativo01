@@ -13,10 +13,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
         public Int32 CRM { get; set; }
         public String Especialidade { get; set; }
 
-        public Medico()
-        {
-            TipoPessoa = TipoPessoa.PF;
-        }
+        public Medico() { TipoPessoa = TipoPessoa.PF; }
 
     }
 }

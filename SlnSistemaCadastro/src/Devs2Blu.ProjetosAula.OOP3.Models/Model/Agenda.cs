@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 {
-    public class Agenda
+    internal class Agenda
     {
     }
 }

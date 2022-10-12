@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65EEFE8E-A5C9-470B-A2E4-78A175DF2615}</ProjectGuid>
+    <ProjectGuid>{A9392442-A845-4591-A5A5-195898C026E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Devs2Blu.ProjetosAula.SistemaCadastro.Models</RootNamespace>
@@ -41,14 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\FlStatus.cs" />
     <Compile Include="Enum\TipoPessoa.cs" />
     <Compile Include="Model\Agenda.cs" />
     <Compile Include="Model\AgendaPaciente.cs" />
     <Compile Include="Model\ContaPaciente.cs" />
     <Compile Include="Model\Convenio.cs" />
-    <Compile Include="Model\endereco.cs" />
+    <Compile Include="Model\Endereco.cs" />
     <Compile Include="Model\Faturamento.cs" />
+    <Compile Include="Enum\FlStatus.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Medico.cs" />
     <Compile Include="Model\Paciente.cs" />
@@ -57,6 +57,5 @@
     <Compile Include="Model\Recepcionista.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

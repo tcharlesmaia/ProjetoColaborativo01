@@ -10,33 +10,40 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
     public class Paciente
     {
         public Int32 Id { get; set; }
+
         public Pessoa Pessoa { get; set; }
+
         public Convenio Convenio { get; set; }
+
         public Int32 NrProntuario { get; set; }
-        public string PacienteRisco { get; set; }
-        public Int32 FlObito { get; set; }
+
+        public String PacienteRisco { get; set; }
+
         public FlStatus Status { get; set; }
+
+        public Int32 FlObito { get; set; }
 
         public Paciente()
         {
             Pessoa = new Pessoa();
             Convenio = new Convenio();
-            FlObito = 0;
-            Pessoa.TipoPessoa = TipoPessoa.PF;
             Status = FlStatus.A;
+            FlObito = 0;
 
+            Pessoa.TipoPessoa = TipoPessoa.PF;
         }
 
-        public Paciente(int id, Pessoa pessoa, Convenio convenio, int nrProntuario, string pacienteRisco, int flObito, FlStatus status)
+        public Paciente(int id, Pessoa pessoa, Convenio convenio, int nrProntuario, string pacienteRisco, FlStatus status, int flObito)
         {
             Id = id;
             Pessoa = pessoa;
             Convenio = convenio;
             NrProntuario = nrProntuario;
             PacienteRisco = pacienteRisco;
-            FlObito = flObito;
             Status = status;
+            FlObito = flObito;
         }
+
         public Paciente(Pessoa pessoa, Convenio convenio, int nrProntuario, string pacienteRisco)
         {
             Pessoa = pessoa;
@@ -44,6 +51,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
             NrProntuario = nrProntuario;
             PacienteRisco = pacienteRisco;
             Status = FlStatus.A;
+            FlObito = 0;
         }
     }
 }

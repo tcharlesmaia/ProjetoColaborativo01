@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 {
-    class ContaPaciente
+    internal class ContaPaciente
     {
     }
 }
